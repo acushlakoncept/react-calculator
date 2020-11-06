@@ -2,7 +2,7 @@
   --display: #858693;
   --operator: #f39148;
   --num: #e0e0e0;
-  --bg: #fafafa
+  --bg: #fafafa;
 }
 
 * {
@@ -15,7 +15,7 @@
 
 html {
   font-size: 50%;
-  background-color: var(--bg);;
+  background-color: var(--bg);
 }
 
 body {
@@ -48,7 +48,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding: 1rem;
-  color: #ffffff;
+  color: #fff;
   font-size: 3rem;
 }
 
@@ -71,6 +71,6 @@ body {
   font-size: 3rem;
 }
 
-.btnPanel__row button:last-child{
+.btnPanel__row button:last-child {
   background-color: var(--operator);
 }
