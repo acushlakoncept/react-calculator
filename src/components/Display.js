@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Display() {
   return (
-    <div>
-      <h2>Display</h2>
+    <div className="display">
+      <h2>0</h2>
     </div>
   );
 }

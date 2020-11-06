@@ -3,13 +3,11 @@ import '../App.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 
-function App() {
+export default function App() {
   return (
-    <div>
+    <div className="calc_container">
       <Display />
       <ButtonPanel />
     </div>
   );
 }
-
-export default App;
