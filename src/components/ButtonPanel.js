@@ -3,7 +3,35 @@ import React from 'react';
 export default function ButtonPanel() {
   return (
     <div className="btnPanel">
-      <div className="btnPanel__row">hey</div>
+      <div className="btnPanel__row">
+        <button type="button">AC</button>
+        <button type="button">+/-</button>
+        <button type="button">%</button>
+        <button type="button" className="bg-orange">÷</button>
+      </div>
+      <div className="btnPanel__row">
+        <button type="button">7</button>
+        <button type="button">8</button>
+        <button type="button">9</button>
+        <button type="button" className="bg-orange">X</button>
+      </div>
+      <div className="btnPanel__row">
+        <button type="button">4</button>
+        <button type="button">5</button>
+        <button type="button">6</button>
+        <button type="button" className="bg-orange">-</button>
+      </div>
+      <div className="btnPanel__row">
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+        <button type="button" className="bg-orange">+</button>
+      </div>
+      <div className="btnPanel__row last__row">
+        <button type="button">0</button>
+        <button type="button">.</button>
+        <button type="button" className="bg-orange">=</button>
+      </div>
     </div>
   );
 }

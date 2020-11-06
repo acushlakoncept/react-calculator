@@ -36,7 +36,7 @@ body {
   }
 
   .calc_container {
-    width: 80%;
+    width: 60%;
   }
 }
 
@@ -48,9 +48,29 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding: 1rem;
+  color: #ffffff;
+  font-size: 3rem;
 }
 
 .btnPanel {
   width: 100%;
   background-color: var(--num);
+}
+
+.btnPanel__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 12rem;
+}
+
+.last__row {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.btnPanel__row button {
+  font-size: 3rem;
+}
+
+.bg-orange {
+  background-color: var(--operator);
 }
