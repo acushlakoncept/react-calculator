@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Display() {
+export default function Display({ result = 0 }) {
   return (
     <div className="display">
-      <h2>0</h2>
+      <h2>{ result }</h2>
     </div>
   );
 }
