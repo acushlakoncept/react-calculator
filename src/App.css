@@ -71,6 +71,6 @@ body {
   font-size: 3rem;
 }
 
-.bg-orange {
+.btnPanel__row button:last-child{
   background-color: var(--operator);
 }
