@@ -1,3 +1,76 @@
-.App {
-  text-align: center;
+:root {
+  --display: #858693;
+  --operator: #f39148;
+  --num: #e0e0e0;
+  --bg: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 50%;
+  background-color: var(--bg);
+}
+
+body {
+  box-sizing: border-box;
+  padding: 2rem 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.calc_container {
+  font-size: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .calc_container {
+    width: 60%;
+  }
+}
+
+.display {
+  height: 10rem;
+  width: 100%;
+  background-color: var(--display);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.btnPanel {
+  width: 100%;
+  background-color: var(--num);
+}
+
+.btnPanel__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 12rem;
+}
+
+.last__row {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.btnPanel__row button {
+  font-size: 3rem;
+}
+
+.btnPanel__row button:last-child {
+  background-color: var(--operator);
 }
