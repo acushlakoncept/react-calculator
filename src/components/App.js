@@ -5,9 +5,9 @@ import Display from './Display';
 
 export default function App() {
   return (
-    <div className="calc_container">
+    <>
       <Display />
       <ButtonPanel />
-    </div>
+    </>
   );
 }
