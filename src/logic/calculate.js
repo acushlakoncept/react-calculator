@@ -27,7 +27,6 @@ const calculate = (data, buttonName) => {
       total = totalStatus || undefined ? total + buttonName : buttonName;
       totalStatus = true;
     }
-    // total = total === null ? buttonName : total + buttonName;
   } else if (digits.includes(buttonName) && operation !== null) {
     next = next === null ? buttonName : next + buttonName;
   } else if (
