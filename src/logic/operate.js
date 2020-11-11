@@ -6,19 +6,18 @@ const operate = (numberOne, numberTwo, operation) => {
   const num2 = new Big(numberTwo);
   if (operation === '-') {
     result = num1.minus(num2);
-  }
-  if (operation === '+') {
+  } else if (operation === '+') {
     result = num1.plus(num2);
-  }
-  if (operation === 'X') {
+  } else if (operation === 'X') {
     result = num1.times(num2);
-  }
-  if (operation === '÷') {
+  } else if (operation === '÷') {
     if (numberTwo === 0) {
       result = 'Zero divide Error';
     } else {
       result = num1.div(num2);
     }
+  } else if (operation === '%') {
+    result = num1.div(100);
   }
   return result.toString();
 };
