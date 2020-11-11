@@ -16,20 +16,20 @@ export default class App extends Component {
   }
 
   handleClick = buttonName => {
-    const objState = this.state;
-    const result = calculate(objState, buttonName);
+    const { total, next, operation } = this.state;
+    const result = calculate({ total, next, operation }, buttonName);
     this.setState({
-      total: result.total ? result.total : null,
-      next: result.next ? result.next : null,
-      operation: result.operation ? result.operation : null,
+      total: result.total,
+      next: result.next,
+      operation: result.operation,
     });
   }
 
   render() {
-    const { total, next, operation } = this.state;
+    const { total, next } = this.state;
     return (
       <>
-        <Display result={total || next || '0'} />
+        <Display result={total} next={next} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );

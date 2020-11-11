@@ -14,7 +14,7 @@ const calculate = (data, buttonName) => {
     operation = null;
   } else if (buttonName === '%' && (total !== null || total !== undefined)) {
     (total /= 100).toString();
-    operation = null;
+    // operation = null;
   }
 
   if (digits.includes(buttonName) && operation === null) {
