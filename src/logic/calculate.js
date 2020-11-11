@@ -12,7 +12,7 @@ const calculate = (data, buttonName) => {
     total = null;
     next = null;
     operation = null;
-  } else if (buttonName === '%' && (total !== null || total !== undefined)) {
+  } else if (buttonName === '%') {
     (total /= 100).toString();
     // operation = null;
   }

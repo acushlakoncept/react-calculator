@@ -15,7 +15,7 @@ export default function ButtonPanel({ clickHandler }) {
         <Button name="7" clickHandler={() => clickHandler('7')} />
         <Button name="8" clickHandler={() => clickHandler('8')} />
         <Button name="9" clickHandler={() => clickHandler('9')} />
-        <Button name="X" clickHandler={() => clickHandler('X')} />
+        <Button name="x" clickHandler={() => clickHandler('x')} />
       </div>
       <div className="btnPanel__row">
         <Button name="4" clickHandler={() => clickHandler('4')} />
