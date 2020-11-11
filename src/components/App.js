@@ -31,21 +31,8 @@ export default class App extends Component {
     return (
       <>
         <Display result={total || next || '0'} />
-        <ButtonPanel />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
 }
-
-/**
- *
- handleClick = buttonName => {
-    const stateObj = this.state;
-    const output = calculate(stateObj, buttonName);
-    this.setState({
-      total: output.total ? output.total : null,
-      next: output.next ? output.next : null,
-      operation: output.operation ? output.operation : null,
-    });
-  }
- */
