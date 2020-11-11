@@ -11,17 +11,23 @@ export default class App extends Component {
       total: null,
       next: null,
       operation: null,
+      totalStatus: true,
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = buttonName => {
-    const { total, next, operation } = this.state;
-    const result = calculate({ total, next, operation }, buttonName);
+    const {
+      total, next, operation, totalStatus,
+    } = this.state;
+    const result = calculate({
+      total, next, operation, totalStatus,
+    }, buttonName);
     this.setState({
       total: result.total,
       next: result.next,
       operation: result.operation,
+      totalStatus: result.totalStatus,
     });
   }
 
