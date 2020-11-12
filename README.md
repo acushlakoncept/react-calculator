@@ -11,7 +11,7 @@ In this project, I developed a simple calculation app while I explored the basic
 ![screenshot](./calculator.png)
 
 ## Live Demo
-[Live Demo](https://calc-cush.herokuapp.com/){:target="_blank"}
+[Live Demo](https://calc-cush.herokuapp.com/)
 
 ## Getting Started
 
