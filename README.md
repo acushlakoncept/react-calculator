@@ -1,6 +1,14 @@
 # Calculator App Using React
 
-This project is a basic react app setup. Basic setup included, prop-types to typechecking props and big.js.
+In this project, I developed a simple calculation app while I explored the basic components of React ranging from, 
+- React App Setup
+- React JSX,
+- React Components,
+- React States and Props
+- Event Handlers
+- Deploying React App to Heroku.
+
+![screenshot](./calculator.png)
 
 ## Live Demo
 [Live Demo](https://calc-cush.herokuapp.com/)
