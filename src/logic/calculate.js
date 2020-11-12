@@ -1,7 +1,9 @@
 import operate from './operate';
 
 const calculate = (data, buttonName) => {
-  let { total, next, operation } = data;
+  let {
+    total, next, operation, totalStatus,
+  } = data;
   const operands = ['+', '-', 'x', '÷', '%'];
   const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
 
@@ -12,13 +14,20 @@ const calculate = (data, buttonName) => {
     total = null;
     next = null;
     operation = null;
-  } else if (buttonName === '%' && (total !== null || total !== undefined)) {
+    totalStatus = true;
+  } else if (buttonName === '%') {
     (total /= 100).toString();
     operation = null;
   }
 
   if (digits.includes(buttonName) && operation === null) {
-    total = total === null ? buttonName : total + buttonName;
+    if (total === null) {
+      total = buttonName;
+    } else {
+      total = totalStatus || undefined ? total + buttonName : buttonName;
+      totalStatus = true;
+    }
+    // total = total === null ? buttonName : total + buttonName;
   } else if (digits.includes(buttonName) && operation !== null) {
     next = next === null ? buttonName : next + buttonName;
   } else if (
@@ -30,9 +39,11 @@ const calculate = (data, buttonName) => {
     if (operands.includes(operation)) total = operate(total, next, operation);
     operation = null;
     next = null;
+    totalStatus = false;
   }
-
-  return { total, next, operation };
+  return {
+    total, next, operation, totalStatus,
+  };
 };
 
 export default calculate;
