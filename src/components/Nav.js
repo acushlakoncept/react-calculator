@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Nav = () => (
-  <nav>
+  <nav className="nav">
     <h1>Math Magicians</h1>
-    <ul>
+    <ul className="nav_menu">
       <li>Home</li>
       <li>Calculator</li>
       <li>Quotes</li>
