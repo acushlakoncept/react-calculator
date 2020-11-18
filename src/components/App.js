@@ -30,6 +30,7 @@ const App = () => {
   return (
     <>
       <Nav />
+      <h1>Let’s do some math!</h1>
       <Display result={total} next={next} />
       <ButtonPanel clickHandler={handleClick} />
     </>
