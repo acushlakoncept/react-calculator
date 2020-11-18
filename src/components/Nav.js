@@ -4,9 +4,9 @@ const Nav = () => (
   <nav className="nav">
     <h1>Math Magicians</h1>
     <ul className="nav_menu">
-      <li>Home</li>
-      <li>Calculator</li>
-      <li>Quotes</li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/calculator">Calculator</a></li>
+      <li><a href="/quotes">Quotes</a></li>
     </ul>
   </nav>
 );
