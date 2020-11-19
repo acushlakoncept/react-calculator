@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import Display from '../components/Display';
 import ButtonPanel from '../components/ButtonPanel';
 import Nav from '../components/Nav';
+import operate from '../logic/operate';
 
 configure({ adapter: new Adapter() });
 it('renders button correctly', () => {
@@ -26,4 +27,9 @@ it('contains 3 nav links', () => {
 it('contains 19 buttons links', () => {
   const wrapper = shallow(<ButtonPanel clickHandler={jest.fn()} />).find(Button).length;
   expect(wrapper).toBe(19);
+});
+
+it('returns the addition of two nums', () => {
+  const result = operate(4, 5, '+');
+  expect(result).toEqual('9');
 });
