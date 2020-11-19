@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders button correctly 1`] = `
+<button
+  onClick={[MockFunction]}
+  type="button"
+>
+  AC
+</button>
+`;
+
 exports[`renders correctly 1`] = `
 <button
   onClick={[MockFunction]}
@@ -7,4 +16,24 @@ exports[`renders correctly 1`] = `
 >
   AC
 </button>
+`;
+
+exports[`renders correctly 2`] = `
+<div
+  className="display"
+>
+  <h2>
+    0
+  </h2>
+</div>
+`;
+
+exports[`renders display correctly 1`] = `
+<div
+  className="display"
+>
+  <h2>
+    0
+  </h2>
+</div>
 `;
