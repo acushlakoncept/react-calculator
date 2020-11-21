@@ -6,7 +6,9 @@ In this project, I developed a simple calculation app while I explored the basic
 - React Components,
 - React States and Props
 - Event Handlers
+- React Routes
 - Deploying React App to Heroku.
+- React Testing using Jest 
 
 ![screenshot](./calculator.png)
 
